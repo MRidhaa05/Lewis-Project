@@ -1,3 +1,57 @@
+import React from 'react';
+import { Routes, Route } from 'react-router-dom';
+
+import Navbar from './components/common/Navbar';
+
+import Home from './pages/Home';
+import About from './pages/About';
+import Login from './pages/Login';
+import Cart from './pages/Cart';
+import Product from './pages/Product';
+import Orders from './pages/Orders';
+import PlaceOrders from './pages/PlaceOrders';
+import Collection from './pages/Collection';
+import Contact from './pages/Contact';
+
+const App = () => {
+  return (
+    <div className="px-4 sm:px-[-5vw] md:px-[7vw] lg:px-[9vw]">
+      <Navbar />
+
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/About" element={<About />} />
+        <Route path="/Login" element={<Login />} />
+        <Route path="/Cart" element={<Cart />} />
+        <Route path="/Product/:ProductId" element={<Product />} />
+        <Route path="/Orders" element={<Orders />} />
+        <Route path="/Place-Order" element={<PlaceOrders />} />
+        <Route path="/Collection" element={<Collection />} />
+        <Route path="/Contact" element={<Contact />} />
+      </Routes>
+    </div>
+  );
+};
+
+export default App;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
 import React, { useState, useEffect } from 'react'
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom'
 import { cn } from '@/lib/cn'
@@ -86,7 +140,7 @@ function App() {
   return (
     <Router>
       <div className="flex flex-col min-h-screen">
-        {/* 🧱 Main Page Content */}
+        {/* 🧱 Main Page Content 
         <main className="flex-grow">
           <Routes>
             <Route path="/" element={<Home />} />
@@ -117,7 +171,7 @@ function App() {
           </Routes>
         </main>
 
-        {/* ⬇️ Navigation Bar Below Gray Section */}
+        {/* ⬇️ Navigation Bar Below Gray Section 
         <nav className="p-4 bg-gray-100 text-center border-t border-gray-300">
           <Link to="/" className="mx-3 text-red-500 font-medium hover:underline">
             Home
@@ -135,3 +189,4 @@ function App() {
 }
 
 export default App
+*/
