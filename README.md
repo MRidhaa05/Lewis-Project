@@ -1,19 +1,46 @@
-| **Feature Area**                    | **Description**                                                                    | **Status**        |
-| ----------------------------------- | ---------------------------------------------------------------------------------- | ----------------- |
-| **User Authentication**             | JWT-based login and registration for customers and admins.                         | ✅ Completed       |
-| **User Management (Admin)**         | Admin can view and manage user accounts via `UserAdminController`.                 | ✅ Completed       |
-| **Product Management**              | CRUD operations on store products using `ProductsController` and `ProductService`. | ✅ Completed       |
-| **Order Management**                | Customers can create and view their orders. Admins can manage them.                | ✅ Completed       |
-| **Payments System**                 | Handles payment records and links payments to orders.                              | ✅ Completed       |
-| **Credit & Installment Management** | Implements credit agreements, installment tracking, and repayment logic.           | ✅ Completed       |
-| **Audit Logging**                   | Records user or system activities using the `AuditLog` model.                      | ✅ Completed       |
-| **Error Handling Middleware**       | Global middleware for unified exception handling.                                  | ✅ Completed       |
-| **Database Seeding**                | Automatically populates essential seed data at startup.                            | ✅ Completed       |
-| **Security & CORS Policy**          | CORS configured for frontend (port 5173). JWT and password hashing in place.       | ✅ Completed       |
-| **Delivery System**                 | Out of scope per BRD (excluded intentionally).                                     | 🚫 Not Applicable |
+Lewis Store — Fullstack E-Commerce & Credit Sales System
 
+A full-stack web application for managing inventory, customer accounts, product sales, and flexible payment options (cash or credit up to 36 months). Built with React, ASP.NET Core Web API, and SQL Server.
 
----
+🚀 Features
+Customer
 
-After carefully checking the Phase 1 in-scope items, the backend fully implements all required functionality :) 
-To the frontend we go! 😎👍🏼
+Register, login (JWT-based)
+
+Browse products, search & view details
+
+Add items to cart
+
+Checkout with cash or credit
+
+View orders, payment schedules & credit agreements
+
+Manager / Admin
+
+Full product CRUD (SKU, price, stock, images, category)
+
+Low-stock alerts & inventory logs
+
+Order management & delivery tracking
+
+Reporting: sales, outstanding credit, stock levels
+
+Role-based access control
+
+Credit & Payments
+
+Terms: 1–36 months
+
+Configurable interest & setup fees
+
+Auto-generated installment schedule
+
+Manual or automated payment posting
+
+Delivery fee included in total/credit schedule
+
+🏗️ Tech Stack
+
+Frontend: React, React Router, Axios
+Backend: ASP.NET Core Web API, Entity Framework Core, JWT Auth
+Database: SQL Server / PostgreSQL
