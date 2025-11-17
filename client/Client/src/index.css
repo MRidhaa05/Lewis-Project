@@ -1,3 +1,6 @@
+/* Import Google Font FIRST */
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
+
 /* Tailwind directives */
 @tailwind base;
 @tailwind components;
@@ -5,14 +8,13 @@
 
 /* Custom styles */
 :root {
-  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family: "Outfit", sans-serif;
   line-height: 1.5;
   font-weight: 400;
 
-  /* Page background and text */
   color-scheme: light;
-  color: #000000; /* all text black */
-  background-color: #ffffff; /* background white */
+  color: black;
+  background-color: white;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -26,57 +28,51 @@ body {
   flex-direction: column;
   min-width: 320px;
   min-height: 100vh;
-  background-color: #ffffff; /* enforce white background */
-  color: #000000; /* enforce black text */
+  background-color: white;
+  color: black;
 }
 
 h1 {
   font-size: 3.2em;
   line-height: 1.1;
-  color: #000000;
+  color: black;
 }
 
 a {
   font-weight: 500;
-  color: rgb(255, 9, 9); /* links black */
+  color: rgb(255, 9, 9);
   text-decoration: inherit;
 }
 a:hover {
-  color: #333333d5; /* slightly darker on hover */
+  color: #333333d5;
 }
 
 button {
   border-radius: 8px;
-  border: 1px solid #000000;
+  border: 1px solid black;
   padding: 0.6em 1.2em;
   font-size: 1em;
   font-weight: 500;
   font-family: inherit;
-  background-color: #ffffff; /* button background white */
-  color: #000000; /* button text black */
+  background-color: white;
+  color: black;
   cursor: pointer;
-  transition: border-color 0.25s, background-color 0.25s;
+  transition:
+    border-color 0.25s,
+    background-color 0.25s;
 }
 button:hover {
   border-color: #131313;
-  background-color: #dddddd; /* light gray hover effect */
+  background-color: #dddddd;
 }
 button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
 
-/* Remove color-scheme overrides */
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #000000;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #333333;
-  }
-  button {
-    background-color: #ffffff;
-    color: #000000;
+@media (max-width: 640px) {
+  a.active {
+    background-color: black;
+    color: white;
   }
 }

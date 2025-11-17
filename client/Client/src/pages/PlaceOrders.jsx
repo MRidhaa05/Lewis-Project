@@ -1,9 +1,7 @@
-import React from 'react'
+import React from "react";
 
 const PlaceOrders = () => {
-  return (
-    <div>PlaceOrders</div>
-  )
-}
+  return <div>PlaceOrders</div>;
+};
 
-export default PlaceOrders
+export default PlaceOrders;
