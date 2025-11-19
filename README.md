@@ -1,46 +1,70 @@
-Lewis Store — Fullstack E-Commerce & Credit Sales System
+🛒 Lewis Store — Inventory & Credit Sales System
 
-A full-stack web application for managing inventory, customer accounts, product sales, and flexible payment options (cash or credit up to 36 months). Built with React, ASP.NET Core Web API, and SQL Server.
+Full-Stack E-Commerce & Inventory Management Web App
+Manage products, customers, orders, and flexible payments.
+
+📌 Overview
+
+Supports cash & credit sales (1–36 months), delivery options,
+installment schedules, order tracking, and role-based access.
+
+💻 Tech Stack:
+
+Frontend: React
+
+Backend: ASP.NET Core Web API (C#)
+
+Database: SQL Server / PostgreSQL
 
 🚀 Features
-Customer
 
-Register, login (JWT-based)
+📦 Inventory (Manager)
 
-Browse products, search & view details
+CRUD products & stock tracking
 
-Add items to cart
+Low-stock alerts & CSV import/export
 
-Checkout with cash or credit
+👤 Customer Accounts
 
-View orders, payment schedules & credit agreements
+Registration & JWT login
 
-Manager / Admin
+Profile, order history, credit accounts
 
-Full product CRUD (SKU, price, stock, images, category)
+Role-based access: Customer / Manager / Admin
 
-Low-stock alerts & inventory logs
+🛍️ Product & Shopping
 
-Order management & delivery tracking
+Browse, search, view details, add to cart
 
-Reporting: sales, outstanding credit, stock levels
+Responsive UI
 
-Role-based access control
+💰 Checkout & Payments
 
-Credit & Payments
+Cash & credit purchases
 
-Terms: 1–36 months
+Installment schedules, interest, setup fees
 
-Configurable interest & setup fees
+Delivery fee integration
 
-Auto-generated installment schedule
+📦 Orders & Delivery
 
-Manual or automated payment posting
+Track status, delivery info, cancellations/refunds
 
-Delivery fee included in total/credit schedule
+📊 Reporting
 
-🏗️ Tech Stack
+Sales & credit reports
 
-Frontend: React, React Router, Axios
-Backend: ASP.NET Core Web API, Entity Framework Core, JWT Auth
-Database: SQL Server / PostgreSQL
+Low-stock alerts, export CSV/PDF
+
+🔒 Security
+
+JWT auth, role-based access
+
+Audit logs, bcrypt password hashing
+
+🏗️ Architecture
+
+Frontend: React, Router, forms, component library
+Backend: ASP.NET Core Web API, RESTful, EF Core
+Database: Users, Customers, Products, Orders, CreditAgreements,
+Payments, Deliveries, InventoryTransactions, AuditLogs
