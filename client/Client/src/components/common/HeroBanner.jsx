@@ -1,31 +1,39 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import { assets } from "../../assets/assets";
 
 const HeroBanner = () => {
   return (
-    <div className="flex flex-col sm:flex-row border border-gray-400">
-      {/*HeroBanner Left side*/}
-      <div className="w-full sm:h-1/2 flex items-center justify-center py-10 sm:py-0">
-        <div className="text-[#414141]">
-          <div className="flex items-center gap-2">
-            <p className="w-8 md:w-11 h-[2px] bg-[#414141]"> </p>
-            <p className="font-medium text-sm md:text-base">Our Best Seller</p>
-          </div>
-          <h1 className="text-3xl sm:py-3 lg:text-5x1 leading-relaxed">
-            Latest Arrivals
-          </h1>
-          <div className="flex items-center gap-2">
-            <p className="font-semibold text-sm md:text-base">SHOP NOW</p>
-            <p className="w-8 md:w-11 h-[1px] bg-[#414141]"></p>
-          </div>
-        </div>
-      </div>
-      {/*HeroBanner Right side*/}
+    <div className="relative w-full h-[400px] sm:h-[500px] lg:h-[600px] overflow-hidden">
+      {/* Background Image */}
       <img
-        src={assets.image_holderd}
-        className="w-40 h-50 sm:1/2"
-        alt="Picture here"
+        src={assets.landingPage_bg}
+        alt="Hero Banner"
+        className="w-full h-full object-cover"
       />
+
+      {/* Overlay */}
+      <div className="absolute inset-0 bg-black/30"></div>
+
+      {/* Text Content */}
+      <div className="absolute inset-0 flex flex-col items-center justify-center text-center px-4 sm:px-8 lg:px-16 text-white">
+        <div className="flex items-center gap-2 mb-2">
+          <p className="w-8 md:w-11 h-[2px] bg-white"></p>
+          <p className="font-medium text-sm md:text-base">Our Best Seller</p>
+          <p className="w-8 md:w-11 h-[2px] bg-white"></p>
+        </div>
+
+        <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-6">
+          Latest Arrivals
+        </h1>
+
+        {/* SHOP NOW Button */}
+        <button>
+          <Link to="/Collection" className="px-2 py-2 rounded-full">
+            SHOP NOW
+          </Link>
+        </button>
+      </div>
     </div>
   );
 };

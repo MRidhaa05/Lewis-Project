@@ -3,16 +3,14 @@ import React, { useState, useEffect } from "react";
 const NewsletterPopup = () => {
   const [showPopup, setShowPopup] = useState(false);
 
-  // Show popup after 3 seconds
   useEffect(() => {
     const timer = setTimeout(() => {
-      // Check if already closed
-      //NB*  change this when you are done testing so it does not show every time u reload
-      {
-        /*const dismissed = localStorage.getItem("newsletterDismissed");
-      if (!dismissed)*/
+      const dismissed = localStorage.getItem("newsletterDismissed");
+
+      // Only show if NOT dismissed
+      if (!dismissed) {
+        setShowPopup(true);
       }
-      setShowPopup(true);
     }, 3000);
 
     return () => clearTimeout(timer);
@@ -28,7 +26,6 @@ const NewsletterPopup = () => {
       {showPopup && (
         <div className="fixed inset-0 flex items-center justify-center bg-black/50 z-50">
           <div className="bg-white rounded-xl p-8 w-11/12 max-w-md relative shadow-lg">
-            {/* Close button */}
             <button
               onClick={handleClose}
               className="absolute top-2 right-1 text-gray-500 hover:text-gray-700"
@@ -39,9 +36,9 @@ const NewsletterPopup = () => {
             <h2 className="text-2xl font-bold text-center mb-4">
               Subscribe to Our Newsletter
             </h2>
+
             <p className="text-gray-700 text-center mb-6">
-              Get exclusive offers, product updates, and more straight to your
-              inbox!
+              Get exclusive offers, product updates, and more!
             </p>
 
             <form className="flex flex-col sm:flex-row gap-3">

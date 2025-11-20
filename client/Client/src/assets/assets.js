@@ -10,6 +10,7 @@ import reliable_icon from "./reliable_icon.png";
 import secure_icon from "./secure_icon.png";
 import bestSeller from "../components/common/BestSeller";
 
+import landingPage_bg from "./landingPage_bg.jpg";
 import p_img1 from "./p_img1.png";
 import p_img2 from "./p_img2.png";
 import p_img3 from "./p_img3.png";
@@ -27,8 +28,10 @@ import partner2 from "./partner2.png";
 import partner3 from "./partner3.png";
 import partner4 from "./partner4.png";
 import partner5 from "./partner5.png";
+import partner6 from "./partner6.png";
 
 export const assets = {
+  /*{Icons}*/
   LewisStore_Logo,
   search_icon,
   user_icon,
@@ -40,11 +43,16 @@ export const assets = {
   reliable_icon,
   secure_icon,
 
+  /*{Backgrounds}*/
+  landingPage_bg,
+
+  /*{Partner logos}*/
   partner1,
   partner2,
   partner3,
   partner4,
   partner5,
+  partner6,
 };
 
 export const products = [
@@ -54,8 +62,8 @@ export const products = [
     description: "A sleek, energy-efficient black refrigerator.",
     price: 8600,
     image: [p_img1],
-    category: "Appliances",
-    subCategory: "Kitchen",
+    category: "Furniture",
+    subCategory: "Bedroom",
     sizes: ["M", "L"],
     date: 1716634300001,
     bestseller: true,
@@ -67,8 +75,8 @@ export const products = [
       "Premium stainless steel fridge with smart temperature control.",
     price: 9400,
     image: [p_img2],
-    category: "Appliances",
-    subCategory: "Kitchen",
+    category: "Furniture",
+    subCategory: "Bedroom",
     sizes: ["L"],
     date: 1716634300002,
     bestseller: false,
@@ -79,8 +87,8 @@ export const products = [
     description: "Ideal for small apartments, bedrooms, and offices.",
     price: 3200,
     image: [p_img3],
-    category: "Appliances",
-    subCategory: "Kitchen",
+    category: "Electrical Appliances",
+    subCategory: "Bedroom",
     sizes: ["S"],
     date: 1716634300003,
     bestseller: true,
@@ -91,8 +99,8 @@ export const products = [
     description: "Spacious double-door fridge with large freezer compartment.",
     price: 11200,
     image: [p_img4],
-    category: "Appliances",
-    subCategory: "Kitchen",
+    category: "Electrical Appliances",
+    subCategory: "Bedroom",
     sizes: ["L"],
     date: 1716634300004,
     bestseller: false,
@@ -103,8 +111,8 @@ export const products = [
     description: "Wi-Fi enabled smart fridge with built-in display.",
     price: 15800,
     image: [p_img5],
-    category: "Appliances",
-    subCategory: "Kitchen",
+    category: "Electrical Appliances",
+    subCategory: "Bedroom",
     sizes: ["L"],
     date: 1716634300005,
     bestseller: true,
@@ -115,8 +123,8 @@ export const products = [
     description: "Vintage-inspired fridge with modern cooling technology.",
     price: 7800,
     image: [p_img6],
-    category: "Appliances",
-    subCategory: "Kitchen",
+    category: "Electrical Appliances",
+    subCategory: "Bedroom",
     sizes: ["M"],
     date: 1716634300006,
     bestseller: false,
@@ -128,7 +136,7 @@ export const products = [
     price: 6900,
     image: [p_img7],
     category: "Appliances",
-    subCategory: "Kitchen",
+    subCategory: "Bedroom",
     sizes: ["L"],
     date: 1716634300007,
     bestseller: false,
@@ -139,8 +147,8 @@ export const products = [
     description: "High-performance cooling system with humidity control.",
     price: 10500,
     image: [p_img8],
-    category: "Appliances",
-    subCategory: "Kitchen",
+    category: "Kitchen",
+    subCategory: "Bedroom",
     sizes: ["M", "L"],
     date: 1716634300008,
     bestseller: true,
@@ -151,8 +159,8 @@ export const products = [
     description: "Reliable standard fridge for everyday essentials.",
     price: 5400,
     image: [p_img9],
-    category: "Appliances",
-    subCategory: "Kitchen",
+    category: "Kitchen",
+    subCategory: "Bedroom",
     sizes: ["M"],
     date: 1716634300009,
     bestseller: false,
@@ -163,7 +171,7 @@ export const products = [
     description: "Perfect for big families needing extra storage space.",
     price: 12400,
     image: [p_img10],
-    category: "Appliances",
+    category: "Kitchen",
     subCategory: "Kitchen",
     sizes: ["L"],
     date: 1716634300010,
@@ -172,11 +180,11 @@ export const products = [
   {
     _id: "0011",
     name: "Slim Tall Fridge",
-    description: "Tall, space-saving design ideal for narrow kitchens.",
+    description: "Tall, space-saving design ideal for narrow Bedrooms.",
     price: 8700,
     image: [p_img11],
     category: "Appliances",
-    subCategory: "Kitchen",
+    subCategory: "Appliances",
     sizes: ["M"],
     date: 1716634300011,
     bestseller: false,

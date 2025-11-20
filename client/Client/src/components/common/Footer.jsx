@@ -8,12 +8,6 @@ const Footer = () => {
         {/* Column 1 */}
         <div className="flex flex-col">
           <img src={assets.LewisStore_Logo} className="mb-5 w-32" alt="Logo" />
-          <p className="text-xl font-medium mb-5">About</p>
-          <p className="text-gray-600">
-            Lewis Stores is South Africa’s leading furniture retailer, with 430+
-            stores and branches in neighboring countries. Browse our full range
-            in-store or online, with fast delivery and credit options available.
-          </p>
         </div>
 
         {/* Column 2 */}
